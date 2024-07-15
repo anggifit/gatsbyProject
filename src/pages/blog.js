@@ -1,13 +1,17 @@
 import * as React from "react";
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import Seo from '../components/seo'
+import Seo from "../components/seo";
 
-const Blog = () => {
+const Blog = ({ data }) => {
   return (
     <Layout pageTitle="My nutri posts">
       <section className="relative pt-12 bg-blueGray-50">
-      <p>My cool posts will go in here</p>
+        <ul className='text-lg text-green-800'>
+          {data.allFile.nodes.map((node) => (
+            <li key={node.name}>{node.name}</li>
+          ))}
+        </ul>
       </section>
     </Layout>
   );
@@ -15,14 +19,14 @@ const Blog = () => {
 
 export const query = graphql`
   query {
-    allFile {
+    allFile (filter: {sourceInstanceName: {eq: "blog"}}){
       nodes {
         name
       }
     }
   }
-`
+`;
 
-export const Head = () => <Seo title="My nutri posts" />
+export const Head = () => <Seo title="My nutri posts" />;
 
 export default Blog;
