@@ -6,13 +6,13 @@ const Blog = ({ data }) => {
   return (
     <Layout pageTitle="My nutri posts">
       <section className="relative pt-12 bg-blueGray-50">
+        <p>HELLOOOOOO</p>
         <ul className="text-lg text-green-800">
           {data.allFile.nodes.map((node) => (
             <li key={node.name}>{node.name}</li>
           ))}
         </ul>
       </section>
-
     </Layout>
   );
 };
