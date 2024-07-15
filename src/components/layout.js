@@ -1,10 +1,10 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link} from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Title from "./Title";
 
 const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
+/*   const data = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
@@ -12,7 +12,7 @@ const Layout = ({ pageTitle, children }) => {
         }
       }
     }
-  `);
+  `); */
   return (
     <div>
       <nav className="font-sans flex items-center justify-between py-2 px-6 bg-white shadow w-full">
