@@ -1,7 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import Layout from "../components/layout";
-import Seo from '../components/Seo'
 
 const IndexPage = () => {
   return (
@@ -74,6 +73,6 @@ const IndexPage = () => {
   );
 };
 
-export const Head = () => <Seo title="Homepage" />
+export const Head = () => <title>Homepage</title>
 
 export default IndexPage;
