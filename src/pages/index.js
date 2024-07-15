@@ -33,7 +33,7 @@ const IndexPage = () => {
                     </div>
                     <div>
                       <h4 className="text-blueGray-500">
-                        Carefully crafted components
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </h4>
                     </div>
                   </div>
@@ -47,7 +47,7 @@ const IndexPage = () => {
                     </div>
                     <div>
                       <h4 className="text-blueGray-500">
-                        Amazing page examples
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       </h4>
                     </div>
                   </div>
@@ -60,7 +60,7 @@ const IndexPage = () => {
                       </span>
                     </div>
                     <div>
-                      <h4 className="text-blueGray-500">Dynamic components</h4>
+                      <h4 className="text-blueGray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
                     </div>
                   </div>
                 </li>
