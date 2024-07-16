@@ -1,21 +1,12 @@
 import * as React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Title from "./Title";
 
 const Layout = ({ pageTitle, children }) => {
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
   return (
     <div>
-      <nav className="font-sans flex items-center justify-between py-2 px-6 bg-white shadow w-full">
+      <nav className="font-sans flex items-center justify-between py-2 px-20 bg-white shadow w-full">
         <div className="flex items-center">
           <StaticImage
             className="w-28 mr-4"
@@ -26,21 +17,33 @@ const Layout = ({ pageTitle, children }) => {
         <div className="flex items-center">
           <Link
             to="/"
-            className="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+            className="text-md no-underline text-black hover:text-blue-dark ml-4 px-1"
           >
-            Home
+            Inicio
           </Link>
           <Link
             to="/about"
-            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-4 px-1"
           >
-            About me
+            Sobre mi
+          </Link>
+          <Link
+            to="/nutriservicios"
+            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-4 px-1"
+          >
+            Nutriservicios
           </Link>
           <Link
             to="/blog"
-            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-2 px-1"
+            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-4 px-1"
           >
             Blog
+          </Link>
+          <Link
+            to="/contacto"
+            className="text-md no-underline text-grey-darker hover:text-blue-dark ml-4 px-1"
+          >
+            Contacto
           </Link>
         </div>
       </nav>
