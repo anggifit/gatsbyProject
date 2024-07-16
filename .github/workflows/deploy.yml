@@ -14,8 +14,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20.10.0'
+      - run: npm install
+      - run: npm run build
       - uses: jsmrcaga/action-netlify-deploy@v2.0.0
         with:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.MY_SITE_ID }}
           NETLIFY_DEPLOY_TO_PROD: true
+          BUILD_DIRECTORY: public # Añadir la carpeta de construcción correcta
