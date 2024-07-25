@@ -40,7 +40,7 @@ const Layout = ({ pageTitle, children }) => {
             Blog
           </Link>
           <Link
-            to="/contacto"
+            to="/contact"
             className="text-md no-underline text-grey-darker hover:text-blue-dark ml-4 px-1"
           >
             Contacto
