@@ -1,49 +1,59 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# Proyecto Gatsby
 
-## 🚀 Quick start
+## Descripción
 
-1.  **Create a Gatsby site.**
+Este es un proyecto desarrollado con [Gatsby](https://www.gatsbyjs.com/), un framework moderno basado en React para crear sitios web estáticos rápidos y optimizados. Este proyecto utiliza [Tailwind CSS](https://tailwindcss.com/) para el estilo y tiene configuraciones personalizadas para componentes.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Requisitos Previos
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+Asegúrate de tener instaladas las siguientes herramientas en tu máquina:
+
+- Node.js (versión recomendada: >= 14.0.0)
+- npm (versión recomendada: >= 6.0.0) o [Yarn](https://yarnpkg.com/)
+
+## Instalación
+
+Sigue estos pasos para configurar el proyecto en tu máquina local:
+
+1. Clona este repositorio:
+
+    ```bash
+    git clone https://github.com/anggifit/gatsbyProject.git
+    cd mi-proyecto
     ```
 
-2.  **Start developing.**
+2. Instala las dependencias:
 
-    Navigate into your new site’s directory and start it up.
+    ```bash
+    npm install
+    ```
 
-    ```shell
-    cd my-gatsby-site/
+3. Inicia el servidor de desarrollo:
+
+    ```bash
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+## Scripts Disponibles
 
-    Your site is now running at http://localhost:8000!
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### `npm run develop`
 
-4.  **Learn more**
+Inicia el servidor de desarrollo en modo de desarrollo.
+Abre [http://localhost:8000](http://localhost:8000) para verlo en el navegador.
+La página se recargará si realizas modificaciones en el código.
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### `npm run build`
 
-## 🚀 Quick start (Netlify)
+Compila la aplicación para producción en la carpeta `public`.
+Esta compilación está optimizada y lista para desplegarse.
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+### `npm run serve`
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+Sirve la aplicación compilada en el entorno local.
+Generalmente se utiliza para probar la versión de producción localmente.
+
+### `npm run clean`
+
+Elimina la carpeta `.cache` y `public`.
